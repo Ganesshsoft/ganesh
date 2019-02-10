@@ -4,5 +4,8 @@ class demo
    {
       "hello";
    }
+   method()
+   {
+   }
 }
 overriding method.
