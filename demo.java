@@ -4,4 +4,7 @@ class demo
    {
       "hello";
    }
+   method()
+   {
+   }
 }
