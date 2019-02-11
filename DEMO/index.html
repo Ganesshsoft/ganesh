@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" href="‪D:\DEMO\style.css">
+		<style type="text/css">
+			
+body {background: blue;}
+.glass
+{
+  background:hsla(0, 0%, 20%, 1);
+  position:absolute;
+  left:42%;
+  top:35%;
+  border-radius:2px 2px 10px 10px;
+  width:90px;
+  height:130px;
+}
+.glass:after
+{
+  content:"";
+  background:hsla(0, 0%, 50%, 0.3);
+  position:absolute;
+  left:5px;
+  top:0;
+  border-radius:0 0 5px 5px;
+  width:80px;
+  height:125px;
+}
+.life
+{
+  background:hsla(0, 75%, 50%, 1);
+  position:absolute;
+  left:5px;
+  top:115px;
+  width:80px;
+  height:10px;
+  border-radius:0 0 5px 5px;
+  animation:myanim3 10s ease-in-out infinite;
+}
+@keyframes myanim3{
+  25%{background:hsla(30, 75%, 50%, 1);}
+  50%{background:hsla(120, 75%, 50%, 1);
+    height:125px;top:0px;}
+}
+.glass:before
+{
+  z-index:20;
+  content:"";
+  background:rgba(255,255,255,0.2);
+  -webkit-filter:brightness(6.2);
+  position:absolute;
+  left:5px;
+  top:0;
+  border-radius:0 0 5px 5px;
+  width:40px;
+  height:125px;
+  
+}
+.life:before
+{
+  content:"";
+  background:hsla(0, 75%, 50%, 1);
+  position:absolute;
+  left:0;
+  top:-2px;
+  width:30px;
+  height:10px;
+  border-radius:100% 100% 0 0;
+  animation:myanim 2s linear infinite,myanim4 10s ease-in-out infinite;
+}
+@keyframes myanim
+{
+  20%,60%{left:3px;top:0px;}
+  30%,70%{left:6px;top:-3px;}
+  40%,80%{left:8px;top:-1px;}
+  50%{left:20px;top:-2px;}
+}
+.waves1,.waves2
+{
+  background:hsla(0, 75%, 50%, 1);
+  position:absolute;
+  left:0;
+  top:-2px;
+  width:30px;
+  height:10px;
+  border-radius:100% 100% 0 0;
+}
+.waves2{left:5px;}
+.waves1:before,.waves2:before
+{
+  content:"";
+  background:hsla(0, 75%, 50%, 1);
+  position:absolute;
+  left:10px;
+  top:0px;
+  width:30px;
+  height:10px;
+  border-radius:100% 100% 0 0;
+}
+.waves2:before{left:15px;}
+.waves1:after,.waves2:after
+{
+  content:"";
+  background:hsla(0, 75%, 50%, 1);
+  position:absolute;
+  left:20px;
+  top:0px;
+  width:30px;
+  height:10px;
+  border-radius:100% 100% 0 0;
+}
+.waves2:after{left:25px;}
+@keyframes myanim2
+{10%,50%{left:30px;top:0px;}
+  20%,60%{left:20px;top:-3px;}
+  30%,70%{left:10px;top:-2px;}
+  40%,80%{left:15px;top:-2px;}
+}
+.waves1{animation:myanim 2.2s ease-in-out infinite,myanim4 10s ease-in-out infinite;}
+.waves2{animation:myanim 2.3s ease-in-out infinite,myanim4 10s ease-in-out infinite;}
+.waves1:before{animation:myanim2 2.4s ease-in-out infinite,myanim4 10s ease-in-out infinite;}
+.waves1:after{animation:myanim2 2.6s ease-in-out infinite,myanim4 10s ease-in-out infinite;}
+.waves2:before{animation:myanim2 2.5s ease-in-out infinite,myanim4 10s ease-in-out infinite;}
+.waves2:after{animation:myanim2 2.7s ease-in-out infinite,myanim4 10s ease-in-out infinite;}
+@keyframes myanim4
+{
+  25%{background:hsla(30, 75%, 50%, 1);}
+  50%{background:hsla(120, 75%, 50%, 1);}
+}
+		</style>>
+</head>
+<body>
+<div class='glass'>
+  <div class='life'>
+    <div class='waves1'></div>
+    <div class='waves2'></div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
